@@ -1,8 +1,7 @@
-aromatic = "2I3I2X9V1X"
+aromatic = input ()
 
 digits = []
-sum = 0
-
+sums = []
 
 for digit in aromatic : 
     if type (digit) == str :
@@ -23,13 +22,21 @@ for digit in aromatic :
         else :
             digits.append (int(digit))
 
-print (digits)
+
 first = digits [0::2]
 second = digits [1::2]
 
+n = len (first)
+
+for i in range (n - 1) :
+    if second [i + 1] > second [i] :
+        sums. append (-first [i] * second [i])
+    else :
+        sums. append (first [i] * second [i])
+
+sums.append (first [-1] * second [-1])
+
+print (sum (sums))
 
 
-for i in range (len(first)) :
-    product = 
-   
-print (sum)
+
