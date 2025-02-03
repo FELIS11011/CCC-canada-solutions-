@@ -1,3 +1,5 @@
+# not full marks 
+
 line1 = input ()
 line2 = input ()
 line1a = list (line1)
